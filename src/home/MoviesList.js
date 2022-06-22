@@ -12,10 +12,6 @@ function MoviesList() {
     const abortController = new AbortController();
     listMovies(abortController.signal).then(setMovies).catch(setError);
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> f42596deae1c97fe6c5121a3f12e42b23e122071
     return () => abortController.abort();
   }, []);
 
